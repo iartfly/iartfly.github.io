@@ -1,23 +1,46 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>我的知识库</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>个人知识库</title>
+<link rel="stylesheet" href="css/base.css">
+<link id="theme-css" rel="stylesheet" href="css/theme-light.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '我的知识库',
-      repo: 'iartfly/iartfly.github.io',
-      search: 'auto',
-      loadSidebar: true,
-      subMaxLevel: 3
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+<div class="kb-wrap">
+  <aside class="sidebar">
+    <div class="side-head">
+      <h1>知识库</h1>
+      <div class="theme-group">
+        <button data-theme="light">浅色</button>
+        <button data-theme="dark">深色</button>
+        <button data-theme="clean">极简</button>
+      </div>
+      <input id="search-input" placeholder="搜索文档..." class="search-bar">
+    </div>
+    <div class="tree-container"></div>
+  </aside>
+
+  <main class="main">
+    <div class="main-inner">
+      <div id="content"></div>
+    </div>
+  </main>
+</div>
+<script>
+  window.$docsify = {
+    name: '诗词',
+    repo: 'iartfly/poetry.github.io',
+    search: 'auto',
+    loadSidebar: true,
+    subMaxLevel: 3
+  }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
