@@ -1,0 +1,27 @@
+
+[
+  {
+    "label": "快速开始",
+    "path": "docs/01-快速开始/index.md",
+    "children": [
+      { "label": "安装部署", "path": "docs/01-快速开始/install.md" }
+    ]
+  },
+  {
+    "label": "基础使用",
+    "path": "docs/02-基础使用/basic.md",
+    "children": [
+      {
+        "label": "高级功能",
+        "children": [
+          { "label": "系统配置", "path": "docs/02-基础使用/03-高级功能/config.md" },
+          { "label": "插件扩展", "path": "docs/02-基础使用/03-高级功能/plugin.md" }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "关于项目",
+    "path": "docs/04-关于/about.md"
+  }
+]
