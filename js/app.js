@@ -97,5 +97,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('kb-theme') || 'light';
   themeLink.href = `css/theme-${saved}.css`;
   loadNav();
-  loadFile('docs/01-快速开始/index.md');
+  loadFile('docs/01-入门/index.md');
 });
